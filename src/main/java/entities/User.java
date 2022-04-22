@@ -49,7 +49,7 @@ public class User implements Serializable {
 
   public User() {}
 
-  //TODO Change when password is hashed
+  //TODO Change when password is hashed - done
    public boolean verifyPassword(String pw){
         return BCrypt.checkpw(pw, userPass);
 
